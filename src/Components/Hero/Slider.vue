@@ -1,6 +1,5 @@
 <script setup>
-    // import Swiper bundle with all modules installed
-    import Swiper from 'swiper/bundle';
+ 
 
     // import styles bundle
     import 'swiper/css/bundle';
@@ -66,14 +65,14 @@
     }
 
     .hero__container {
-        width: 472px;
-        height: 100%;
-        margin-right: auto;
-        margin-left: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        width: 472px;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
     }  
     
     .hero__title {

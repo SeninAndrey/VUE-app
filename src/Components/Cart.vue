@@ -73,12 +73,12 @@
         position: absolute;
         right: 40px;
         top: 32px;
-        background-color: inherit;
         width: 48px;
         height: 48px;
         border: 1px solid rgba(0, 0, 0, .1);
         border-radius: 24px;
         font-size: 0;
+        background-color: inherit;
     }
 
     .cart__close:hover svg{
@@ -121,9 +121,13 @@
         height: 56px;
         width: 49%;
         border-radius: 4px;
-        background-color: #7bb899;
         font-size: 12px;
         font-weight: 500;
+        background-color: #7bb899;
+    }
+
+    .cart__order:hover {
+        opacity: .8;
     }
 
     .total__label {

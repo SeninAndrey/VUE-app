@@ -53,6 +53,7 @@ import { watch, ref } from 'vue';
         display: flex;
         flex-direction: column;
         gap: 10px;
+        min-width: 185px;
     }
 
     .checkbox {
@@ -73,14 +74,14 @@ import { watch, ref } from 'vue';
         width: 36px;
         height: 22px;
         margin-right: 12px;
-        background-color: #f2f2f2;
         border-radius: 11px;
-        transition: all 0.3s ease-in-out;
+        background-color: #f2f2f2;
+        transition: all 0.2s ease-in-out;
     }
 
     .checkbox__custom::before {
-        content: "";
         position: absolute;
+        content: "";
         left: 7px;
         top: 7px;
         bottom: 7px;
@@ -88,6 +89,10 @@ import { watch, ref } from 'vue';
         height: 8px;
         border-radius: 4px;
         background-color: #1f2020;
+    }
+
+    .checkbox:hover {
+        color: #7bb899;
     }
 
     .checkbox__initial:checked + .checkbox__custom {

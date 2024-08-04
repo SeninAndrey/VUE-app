@@ -49,10 +49,14 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        min-height: 392px;
         padding-bottom: 16px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     } 
+
+    .card__image {
+        width: 100%;
+        margin-bottom: 16px;
+    }
     
     .card__controls {
         justify-content: space-between;
@@ -65,8 +69,8 @@
         bottom: 14px;
         width: 80px;
         height: 32px;
-        background-color: #f2f2f2;
         border-radius: 8px;
+        background-color: #f2f2f2;        
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -75,8 +79,8 @@
     .controls__increase {
         width: 40px;
         height: 24px;
-        background-color: #f2f2f2;
         border-radius: 4px;
+        background-color: #f2f2f2;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -105,8 +109,8 @@
     }
 
     .card__delete:hover {
-        transform: rotate(90deg) scale(1.3) ;
         opacity: 1;
+        transform: rotate(90deg) scale(1.3) ;
     }
 
     .card__controls,
@@ -117,10 +121,6 @@
     .card:nth-last-child(-n + 5) {
         border: none;
     }
-/* 
-    .card:not(:first-child) {        
-        padding-top: 39px;
-    } */
 
     .cart__list .card{
         flex-direction: row;
@@ -155,10 +155,10 @@
     }
 
     .cart__list .card__content {
+        justify-content: space-between;
         width: 200px;
         margin: 0;
         height: 68px;
-        justify-content: space-between;
     }
 
     .cart__list .card__controls,
@@ -173,10 +173,10 @@
     }
 
     .card__price {
-        font-size: 16px;
-        font-weight: 600;
         margin-top: auto;
         margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .cart__list .card__price {

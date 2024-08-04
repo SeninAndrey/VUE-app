@@ -174,6 +174,10 @@
         text-decoration: none;
     }
 
+    a:hover {
+        color: #7bb899;
+    }
+
     button {
         border: none;
         cursor: pointer;        
@@ -182,5 +186,19 @@
     .container {
         padding-left: 67px;
         padding-right: 67px;        
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            padding-left: 37px;
+            padding-right: 37px;        
+        }
+    }
+
+    @media (max-width: 576px) {
+        .container {
+            padding-left: 324x;
+            padding-right: 24px;        
+        }
     }
 </style>

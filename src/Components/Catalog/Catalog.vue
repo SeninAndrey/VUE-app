@@ -69,4 +69,23 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
+
+    @media (max-width: 1200px) {
+        .catalog__cardlist {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    } 
+
+    @media (max-width: 768px) {
+        .catalog__cardlist {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .catalog__cardlist {
+            display: flex;
+            /* grid-template-columns: 1fr; */
+        }
+    }
 </style>
