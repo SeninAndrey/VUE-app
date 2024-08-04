@@ -34,7 +34,14 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">Slide 10</div>
+        <div class="swiper-slide">    
+            <div class="hero__container">
+                <h1 class="hero__title">Краски</h1>
+                <p class="hero__description">
+                    Идеально подходят для стен и других поверхностей. Найди свой идеальный цвет!
+                </p>
+            </div>  
+        </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
         
@@ -53,7 +60,31 @@
 
 <style scoped>
     .swiper {
-        width: 500px;
+        width: 80%;
+        height: 560px;
+        color: #fff;
+    }
+
+    .hero__container {
+        width: 472px;
         height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }  
+    
+    .hero__title {
+        margin-bottom: 24px;
+        font-size: 72px;
+        font-weight: 400;
+    }
+
+    .hero__description {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%;
     }
 </style>
