@@ -1,7 +1,11 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { VueLoaderPlugin } = require('vue-loader')
+const { VueLoaderPlugin } = require('vue-loader');
+
+// Try the environment variable, otherwise use root
+const ASSET_PATH = process.env.ASSET_PATH || '/';
 
 module.exports = (env) => {
     return {
@@ -10,6 +14,7 @@ module.exports = (env) => {
         output: {
             filename: 'main.js',
             filename: '[name].[contenthash].js',
+            publicPath: ASSET_PATH,
             clean: true
         },
         module: {
@@ -58,7 +63,10 @@ module.exports = (env) => {
             }),
             new MiniCssExtractPlugin({
                 filename: 'css/[name].[contenthash:8].css'
-            })
+            }),
+            new webpack.DefinePlugin({
+                'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH),
+              }),
         ], 
     }
 };
