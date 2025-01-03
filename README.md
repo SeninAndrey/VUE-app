@@ -1,6 +1,6 @@
 # VUE-app
 Vue-app(online shop) //в разработке
-[макет(https://www.figma.com/design/l6UaxEzouAGgZeJT1bWPjH/Frontend-Vue-(Copy)?node-id=0-1&p=f&t=SSZD9hZD2VlN9sje-0)] в Figma
+[макет](https://www.figma.com/design/l6UaxEzouAGgZeJT1bWPjH/Frontend-Vue-(Copy)?node-id=0-1&p=f&t=SSZD9hZD2VlN9sje-0) в Figma
 
 ## Функции:
 
